@@ -1,5 +1,5 @@
 
-token = "1729609735:AAE7L_u3jKCp3aAxdqqB6w7Numtqdl2RrlA"
+token = "token here"
 
 # You can write the text that the bot will send as a message when start is typed here.
 #/start yazıldığı zaman botun mesaj olarak atacağı metin buraya istediğiniz yazabilirsininz
