@@ -30,7 +30,7 @@ dp.middleware.setup(LoggingMiddleware())
 async def process_start_command(msg: types.Message):
 	await msg.reply(text(emojize(start_text)))
 
-@dp.message_handler(commands=['yardım'])
+@dp.message_handler(commands=['help'])
 async def process_help_command(msg: types.Message):
 	await msg.reply(text(emojize(help_text)), parse_mode=ParseMode.HTML)
    
@@ -52,13 +52,13 @@ async def inline_echo(iq: InlineQuery):
 async def kotik(msg: types.Message):
 	what_we_want = msg.text.lower()
 	try:
-		if what_we_want == "kedi":
+		if what_we_want == "cat":
 			await types.ChatActions.upload_photo()
 			cat = Animals.give_me_a_cat()
 			cat_n_caption = types.MediaGroup()
 			cat_n_caption.attach_photo(cat[0], cat[1])
 			await msg.reply_media_group(media = cat_n_caption)
-		if what_we_want == "köpek":
+		if what_we_want == "dog":
 			await types.ChatActions.upload_photo()
 			dog = Animals.give_me_a_dog()
 			dog_n_caption = types.MediaGroup()
@@ -66,7 +66,7 @@ async def kotik(msg: types.Message):
 			await msg.reply_media_group(media = dog_n_caption)
 	except Exception as e:
 		print(e)
-		await msg.reply(text("Bir şeyler ters gitti ... \ nTekrar deneyin"))
+		await msg.reply(text("Something went wrong ... \nTry again\nBir şeyler ters gitti ... \nTekrar deneyin"))
 
 if __name__ == '__main__':
 	executor.start_polling(dp, skip_updates=True)
