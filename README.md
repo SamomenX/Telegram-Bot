@@ -8,7 +8,7 @@
 **If you don't know how to get tokens <a href="https://core.telegram.org/bots">click here</a>**
 
 ### image
-https://samo.loves-ani.me/kqmd65bch9a
+https://samo.loves-ani.me/kqmd65bch9a<br>
 https://samo.loves-ani.me/kqmd5mx789a
 
-<a href="https://t.me/botfather">botfather</a> https://samo.loves-ani.me/kqmd7m0089a
+**<a href="https://t.me/botfather">BotFather</a>** 
